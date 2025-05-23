@@ -295,18 +295,8 @@ export class HelixDb implements INodeType {
 		// Get credentials
 		const credentials = await this.getCredentials('helixDbApi');
 
-		// Create HelixDB client with port
-		// Note: HelixDB client currently only supports localhost connections
-		// If host is not localhost, this may not work as expected
+		// Create HelixDB client with port from credentials
 		const client = new HelixDB(credentials.port as number);
-		
-		// TODO: Add support for custom hosts when HelixDB client supports it
-		if (credentials.host !== 'localhost' && credentials.host !== '127.0.0.1') {
-			throw new NodeOperationError(
-				this.getNode(),
-				`HelixDB client currently only supports localhost connections. Host '${credentials.host}' is not supported.`
-			);
-		}
 
 		// Process each input item
 		for (let i = 0; i < items.length; i++) {

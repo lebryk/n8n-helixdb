@@ -101,7 +101,7 @@ export class HelixDbApi implements ICredentialType {
 
 	test: ICredentialTestRequest = {
 		request: {
-			baseURL: 'http://localhost:{{$credentials.port}}',
+			baseURL: 'http://{{$credentials.host}}:{{$credentials.port}}',
 			url: '/health',
 			method: 'GET',
 		},

@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-helixdb",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "n8n community node to integrate with HelixDB - the time-series database for modern applications",
   "keywords": [
     "n8n-community-node-package",
@@ -10,14 +10,14 @@
     "tsdb"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/piotrlebryk/n8n-nodes-helixdb",
+  "homepage": "https://github.com/your-username/n8n-nodes-helixdb",
   "author": {
-    "name": "Piotr Lebryk",
-    "email": "piotr.lebryk@gmail.com"
+    "name": "Your Name",
+    "email": "your.email@example.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/piotrlebryk/n8n-nodes-helixdb.git"
+    "url": "https://github.com/your-username/n8n-nodes-helixdb.git"
   },
   "engines": {
     "node": ">=20.15"

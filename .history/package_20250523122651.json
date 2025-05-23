@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-helixdb",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "n8n community node to integrate with HelixDB - the time-series database for modern applications",
   "keywords": [
     "n8n-community-node-package",

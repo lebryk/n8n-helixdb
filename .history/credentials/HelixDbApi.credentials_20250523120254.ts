@@ -16,7 +16,7 @@ export class HelixDbApi implements ICredentialType {
 			type: 'string',
 			default: 'localhost',
 			placeholder: 'localhost',
-			description: 'The hostname or IP address of your HelixDB server (currently only localhost is supported)',
+			description: 'The hostname or IP address of your HelixDB server',
 		},
 		{
 			displayName: 'Port',
@@ -101,7 +101,7 @@ export class HelixDbApi implements ICredentialType {
 
 	test: ICredentialTestRequest = {
 		request: {
-			baseURL: 'http://localhost:{{$credentials.port}}',
+			baseURL: '={{$credentials.host}}:{{$credentials.port}}',
 			url: '/health',
 			method: 'GET',
 		},
